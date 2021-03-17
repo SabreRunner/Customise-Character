@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4aed399d5085004458442e115a582250, type: 3}
   m_Name: Outfit Selection Int Event
   m_EditorClassIdentifier: 
-  integer: 0
+  integer: 7
