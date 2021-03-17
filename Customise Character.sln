@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.pushforward.extensions", "com.pushforward.extensions.csproj", "{8411e8c3-7bf8-bd41-16a2-46fd7ee995a9}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{db5f45de-87b4-b4c1-6b0b-d0be99457d4a}"
 EndProject
 Global
@@ -9,6 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8411e8c3-7bf8-bd41-16a2-46fd7ee995a9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8411e8c3-7bf8-bd41-16a2-46fd7ee995a9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8411e8c3-7bf8-bd41-16a2-46fd7ee995a9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8411e8c3-7bf8-bd41-16a2-46fd7ee995a9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{db5f45de-87b4-b4c1-6b0b-d0be99457d4a}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{db5f45de-87b4-b4c1-6b0b-d0be99457d4a}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{db5f45de-87b4-b4c1-6b0b-d0be99457d4a}.Release|Any CPU.ActiveCfg = Release|Any CPU
