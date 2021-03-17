@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 114160405}
   - component: {fileID: 114160407}
   - component: {fileID: 114160406}
+  - component: {fileID: 114160408}
   m_Layer: 5
   m_Name: Eyes Image
   m_TagString: Untagged
@@ -198,6 +199,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 114160404}
   m_CullTransparentMesh: 1
+--- !u!114 &114160408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114160404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d758927ccc7b7d4eafd1e4c23a42def, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 114160406}
+  images:
+  - {fileID: 21300000, guid: 7d35b95076ddee94e9cebcbde095648d, type: 3}
+  - {fileID: 21300000, guid: b0f23a2674c7d754886398b8bdcb80f1, type: 3}
+  - {fileID: 21300000, guid: 84450275fa4fa1148aaf4644cd83461e, type: 3}
+  - {fileID: 21300000, guid: b81d7147c77e528429f6ebf7d2809b97, type: 3}
+  - {fileID: 21300000, guid: 096747b312d3d0d4180a2d85a74df02e, type: 3}
+  - {fileID: 21300000, guid: c81557903c409ad4db16d054339ee52d, type: 3}
+  - {fileID: 21300000, guid: 1a06c2eb17faa974e8ac374c665e3b2d, type: 3}
+  - {fileID: 21300000, guid: 0da6258ef1619bc43926faa6db91209a, type: 3}
+  - {fileID: 21300000, guid: 3ef046990d815ec47ac6fa11cb1bd34e, type: 3}
+  - {fileID: 21300000, guid: fb2b39f00053a8442b879cdb667c3c58, type: 3}
 --- !u!1 &127002426
 GameObject:
   m_ObjectHideFlags: 0
@@ -209,6 +234,9 @@ GameObject:
   - component: {fileID: 127002427}
   - component: {fileID: 127002429}
   - component: {fileID: 127002428}
+  - component: {fileID: 127002430}
+  - component: {fileID: 127002432}
+  - component: {fileID: 127002431}
   m_Layer: 5
   m_Name: Character Base Image
   m_TagString: Untagged
@@ -276,6 +304,132 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 127002426}
   m_CullTransparentMesh: 1
+--- !u!114 &127002430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127002426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99926c75b5ee04645bdf3bade0fac74f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respondWhenDisabled: 0
+  gameEventInt: {fileID: 11400000, guid: eaa404bbef97db94889cd738095df7ab, type: 2}
+  intResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1982410936}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1982410941}
+        m_TargetAssemblyTypeName: ImageSelector, Assembly-CSharp
+        m_MethodName: SetImage
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  intAsIndexResponse: []
+--- !u!114 &127002431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127002426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99926c75b5ee04645bdf3bade0fac74f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respondWhenDisabled: 0
+  gameEventInt: {fileID: 11400000, guid: eb144b6e4309d0444a31ad0a155913e8, type: 2}
+  intResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 557366820}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 557366824}
+        m_TargetAssemblyTypeName: ImageSelector, Assembly-CSharp
+        m_MethodName: SetImage
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  intAsIndexResponse: []
+--- !u!114 &127002432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127002426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99926c75b5ee04645bdf3bade0fac74f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respondWhenDisabled: 0
+  gameEventInt: {fileID: 11400000, guid: cf63f9bbc9d61894ba255bb5df5eec07, type: 2}
+  intResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114160404}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 114160408}
+        m_TargetAssemblyTypeName: ImageSelector, Assembly-CSharp
+        m_MethodName: SetImage
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  intAsIndexResponse: []
 --- !u!1 &250374789
 GameObject:
   m_ObjectHideFlags: 0
@@ -731,6 +885,7 @@ GameObject:
   - component: {fileID: 557366821}
   - component: {fileID: 557366823}
   - component: {fileID: 557366822}
+  - component: {fileID: 557366824}
   m_Layer: 5
   m_Name: Outfit Image
   m_TagString: Untagged
@@ -795,6 +950,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 557366820}
   m_CullTransparentMesh: 1
+--- !u!114 &557366824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557366820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d758927ccc7b7d4eafd1e4c23a42def, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 557366822}
+  images:
+  - {fileID: 21300000, guid: a51e1b9cd814560499ec87c45a783d43, type: 3}
+  - {fileID: 21300000, guid: 28e2dea0866fdd44d99bee6bebdc255d, type: 3}
+  - {fileID: 21300000, guid: 2c835058be9d565438616d3e0e0549ab, type: 3}
+  - {fileID: 21300000, guid: 3083af2d3af3a58428b1838a9446f1bb, type: 3}
+  - {fileID: 21300000, guid: c2d13346d7a146147810978d95c61ff2, type: 3}
+  - {fileID: 21300000, guid: 27aa41d131ceb5f499451ceb7fd0f3af, type: 3}
+  - {fileID: 21300000, guid: aa1fe819c5623e9459acf68195b846e3, type: 3}
+  - {fileID: 21300000, guid: 228945f29bfaee24fbfd0575b637e6d8, type: 3}
+  - {fileID: 21300000, guid: 13d1cccf2447e544b8f0f60dee453f9d, type: 3}
+  - {fileID: 21300000, guid: 9424b41119b19af46a2b7c9cec32b8ac, type: 3}
 --- !u!1 &708148145
 GameObject:
   m_ObjectHideFlags: 0
@@ -2246,7 +2425,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1982410937}
   - component: {fileID: 1982410939}
+  - component: {fileID: 1982410941}
   - component: {fileID: 1982410938}
+  - component: {fileID: 1982410940}
   m_Layer: 5
   m_Name: Mouth Image
   m_TagString: Untagged
@@ -2311,3 +2492,42 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1982410936}
   m_CullTransparentMesh: 1
+--- !u!114 &1982410940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1982410936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d758927ccc7b7d4eafd1e4c23a42def, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 1982410938}
+  images:
+  - {fileID: 21300000, guid: b146f2470c921e742ae0cdc55711ee9b, type: 3}
+  - {fileID: 21300000, guid: 11dec61bea29f9d45bd1adb781872853, type: 3}
+  - {fileID: 21300000, guid: a58379319151bb0428d980a329435f07, type: 3}
+  - {fileID: 21300000, guid: 421f425895992ec438d3cfdf79c39ae8, type: 3}
+  - {fileID: 21300000, guid: 9c97abcdc6e108947b659f14145eb147, type: 3}
+  - {fileID: 21300000, guid: f159ccf0ee931dd46a9b22cf1b7972b9, type: 3}
+  - {fileID: 21300000, guid: 25daba9284fa8a847956cf01a337bfd3, type: 3}
+  - {fileID: 21300000, guid: 0595c2ca5bc02584c850734fa38e0ded, type: 3}
+  - {fileID: 21300000, guid: e2f86029dd58e1f49b08b5a0531a410a, type: 3}
+  - {fileID: 21300000, guid: 44688c6b810f44e45b482471715e0c23, type: 3}
+  - {fileID: 21300000, guid: 4c79649cb33d11c41992a2823b0ca4f0, type: 3}
+--- !u!114 &1982410941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1982410936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d758927ccc7b7d4eafd1e4c23a42def, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 1982410938}
+  images: []
