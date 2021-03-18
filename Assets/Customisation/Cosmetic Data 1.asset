@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26a02681a0f641e2aca038899852c9c8, type: 3}
+  m_Name: Cosmetic Data 1
+  m_EditorClassIdentifier: 
+  categories:
+  - category: 1
+    icons:
+    - iconSprite: {fileID: 21300000, guid: 6fcef71f37ea8b349bc2a6b8c89f6e06, type: 3}
+      requiredLevel: 0
+      price: 0
+      purchased: 1
+    - iconSprite: {fileID: 21300000, guid: ae2dd070d2e69634b94bf0d35396fcce, type: 3}
+      requiredLevel: 0
+      price: 0
+      purchased: 1
+    - iconSprite: {fileID: 21300000, guid: c72c8a004fb74da4ab9abbb59f84f5f9, type: 3}
+      requiredLevel: 7
+      price: 0
+      purchased: 0
+    - iconSprite: {fileID: 21300000, guid: ea920e772606d3342bf9191f05a58130, type: 3}
+      requiredLevel: 3
+      price: 0
+      purchased: 0
+    - iconSprite: {fileID: 21300000, guid: 176c0ba4b78775844b13febd2c240999, type: 3}
+      requiredLevel: 4
+      price: 0
+      purchased: 0
+    - iconSprite: {fileID: 21300000, guid: 2c24b8ed29d56ea4dbd2be045ad110ae, type: 3}
+      requiredLevel: 0
+      price: 700
+      purchased: 0
+    - iconSprite: {fileID: 21300000, guid: 1e45249a360a05443a89c2150dc9883b, type: 3}
+      requiredLevel: 0
+      price: 260
+      purchased: 0
+    - iconSprite: {fileID: 21300000, guid: e44636f2cb67b2048aed732938ab94d9, type: 3}
+      requiredLevel: 0
+      price: 1
+      purchased: 0
+    - iconSprite: {fileID: 21300000, guid: 0225621fe3dfc654a8e08fd2de774c19, type: 3}
+      requiredLevel: 5
+      price: 0
+      purchased: 0
+    - iconSprite: {fileID: 21300000, guid: 01dc19a7fe5eba64bb56c265b02ca5dd, type: 3}
+      requiredLevel: 0
+      price: 0
+      purchased: 1
+    - iconSprite: {fileID: 21300000, guid: 582f140cabc537e41b70d00677045da2, type: 3}
+      requiredLevel: 0
+      price: 555
+      purchased: 0
+  - category: 0
+    icons:
+    - iconSprite: {fileID: 21300000, guid: 5677b02610e1f5541b95a6ca0a8a4eed, type: 3}
+      requiredLevel: 8
+      price: 400
+      purchased: 0
+    - iconSprite: {fileID: 21300000, guid: 227ab15f6b91f424596bc74ee533e597, type: 3}
+      requiredLevel: 6
+      price: 0
+      purchased: 0
+    - iconSprite: {fileID: 21300000, guid: 16cabb9b51dbf8043b543f59af8ae2bb, type: 3}
+      requiredLevel: 0
+      price: 700
+      purchased: 0
+    - iconSprite: {fileID: 21300000, guid: f62dda22ee632d547b89c0ecd58e14c2, type: 3}
+      requiredLevel: 0
+      price: 0
+      purchased: 1
+    - iconSprite: {fileID: 21300000, guid: 4fbf742f1308f4a4cb6b1f2399af6ac3, type: 3}
+      requiredLevel: 0
+      price: 0
+      purchased: 1
+    - iconSprite: {fileID: 21300000, guid: 07c0371fa9c669e4e93d28c3c2b8ae37, type: 3}
+      requiredLevel: 5
+      price: 0
+      purchased: 0
+    - iconSprite: {fileID: 21300000, guid: f44ac95e449d9c24ab75fbc9bce42bc5, type: 3}
+      requiredLevel: 4
+      price: 0
+      purchased: 0
+    - iconSprite: {fileID: 21300000, guid: 435245a0dbcd6a4469a7d5b32063cef8, type: 3}
+      requiredLevel: 2
+      price: 0
+      purchased: 0
+    - iconSprite: {fileID: 21300000, guid: f317664d95f801a40815444099a5b233, type: 3}
+      requiredLevel: 0
+      price: 620
+      purchased: 0
+    - iconSprite: {fileID: 21300000, guid: e96ffab89c29890438b04fdcf26e83fd, type: 3}
+      requiredLevel: 0
+      price: 70
+      purchased: 0
+  - category: 2
+    icons:
+    - iconSprite: {fileID: 21300000, guid: f863dfde2c4bcee40b0b53cf93b18db5, type: 3}
+      requiredLevel: 5
+      price: 0
+      purchased: 0
+    - iconSprite: {fileID: 21300000, guid: bea99eeb78d2c0d45871fe700e1862a8, type: 3}
+      requiredLevel: 5
+      price: 0
+      purchased: 0
+    - iconSprite: {fileID: 21300000, guid: 1b0380a870ff83344940c4acfce5fd8d, type: 3}
+      requiredLevel: 6
+      price: 0
+      purchased: 0
+    - iconSprite: {fileID: 21300000, guid: 41ff2e98410777748a63451347611f8c, type: 3}
+      requiredLevel: 3
+      price: 0
+      purchased: 0
+    - iconSprite: {fileID: 21300000, guid: d93d66141a95fc1458cd897de3935471, type: 3}
+      requiredLevel: 0
+      price: 360
+      purchased: 0
+    - iconSprite: {fileID: 21300000, guid: 7df07458cdc08d744a020db3aad8d4e0, type: 3}
+      requiredLevel: 0
+      price: 0
+      purchased: 1
+    - iconSprite: {fileID: 21300000, guid: 592fb684df1d93343acecca976652fa3, type: 3}
+      requiredLevel: 0
+      price: 100
+      purchased: 0
+    - iconSprite: {fileID: 21300000, guid: 3b2720859dd5fc84cb1a77a122f94504, type: 3}
+      requiredLevel: 0
+      price: 0
+      purchased: 1
+    - iconSprite: {fileID: 21300000, guid: 236e2816c13e85e439a5fd57630743cf, type: 3}
+      requiredLevel: 0
+      price: 0
+      purchased: 1
+    - iconSprite: {fileID: 21300000, guid: dfe791d253697e84d8592077e819e59d, type: 3}
+      requiredLevel: 0
+      price: 1000
+      purchased: 0
