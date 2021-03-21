@@ -1,5 +1,6 @@
 namespace Customisation
 {
+    using System;
     using PushForward.EventSystem;
     using UnityEngine;
 
@@ -25,6 +26,7 @@ namespace Customisation
             set
             {
                 GameManager.userData.Coins = value;
+                Instance.Log("UserCoins", "Reduced " + value + " Coins.");
                 GameManager.Instance.coinsUpdateEvent.Raise(value.ToString());
             }
         }
@@ -32,6 +34,14 @@ namespace Customisation
         private void Start()
         {
             GameManager.userData = UserDataGetter.GetUserData();
+            this.Log("Start", "Level: " + GameManager.userData.Level + "; Coins: " + GameManager.userData.Coins);
+            GameManager.UserLevel = GameManager.UserLevel;
+            GameManager.UserCoins = GameManager.UserCoins;
+        }
+
+        private void Awake()
+        {
+            this.SetInstance(this);
         }
     }
 }

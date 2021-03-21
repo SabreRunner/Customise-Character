@@ -130,7 +130,7 @@ MonoBehaviour:
     - iconSprite: {fileID: 21300000, guid: 592fb684df1d93343acecca976652fa3, type: 3}
       requiredLevel: 0
       price: 100
-      purchased: 0
+      purchased: 1
     - iconSprite: {fileID: 21300000, guid: 3b2720859dd5fc84cb1a77a122f94504, type: 3}
       requiredLevel: 0
       price: 0

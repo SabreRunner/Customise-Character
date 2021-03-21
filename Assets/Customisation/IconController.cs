@@ -19,34 +19,27 @@ namespace Customisation
         [SerializeField] private Color defaultColor;
         [SerializeField] private Color selectedColor;
         #endregion // inspector fields
-        
+
         private int dataIndex;
-        private GameEventInt selectEvent = default;
-        private Action buyItemAction = default;
+        private Action iconPressedAction;
 
         public void IconPressed()
         {
-            if (this.selectEvent != default)
-            { this.selectEvent.Raise(this.dataIndex); }
-            else if (this.buyItemAction != default)
-            { this.buyItemAction.Invoke(); }
+            this.iconPressedAction?.Invoke();
         }
 
-        public void Initialise(int index, IconData data, int userLevel, bool selected, GameEventInt select, Action buyItem)
+        public void Initialise(int index, IconData data, int userLevel, bool selected, Action iconPressed)
         {
             this.dataIndex = index;
             this.backgroundImage.color = selected ? this.selectedColor : this.defaultColor;
             this.iconImage.sprite = data.iconSprite;
-
-            if (selected)
-            { return; }
 
             if (data.purchased)
             {
                 this.lockImage.gameObject.SetActive(false);
                 this.levelImage.gameObject.SetActive(false);
                 this.coinsImage.gameObject.SetActive(false);
-                this.selectEvent = select;
+                this.iconPressedAction = iconPressed;
                 return;
             }
 
@@ -63,7 +56,7 @@ namespace Customisation
                 this.levelImage.gameObject.SetActive(false);
                 this.coinsImage.gameObject.SetActive(true);
                 this.coinsTMP.text = data.price.ToString();
-                this.buyItemAction = buyItem;
+                this.iconPressedAction = iconPressed;
             }
         }
     }

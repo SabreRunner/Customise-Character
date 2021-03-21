@@ -1,8 +1,10 @@
 namespace Customisation
 {
+    using System;
     using System.Collections.Generic;
     using PushForward.EventSystem;
     using UnityEngine;
+    using Object = UnityEngine.Object;
 
     public class IconsManager : BaseMonoBehaviour
     {
@@ -13,7 +15,18 @@ namespace Customisation
         [SerializeField] private GameEventInt selectMouth;
 
         private readonly List<IconController> iconControllers = new List<IconController>();
-        private int selectedOutfit, selectedEyes, selectedMouth;
+        private int selectedOutfit = -1, selectedEyes = -1, selectedMouth = -1;
+
+        private void SelectInCategory(StoreCategory category, int index)
+        {
+            switch (category)
+            {
+                case StoreCategory.Eyes: this.selectedEyes = index; break;
+                case StoreCategory.Mouths: this.selectedMouth = index; break;
+                case StoreCategory.Outfits: this.selectedOutfit = index; break;
+                default: throw new ArgumentOutOfRangeException(nameof(category), category, null);
+            }
+        }
 
         private void BuyItem(StoreCategory category, int index)
         {
@@ -23,6 +36,7 @@ namespace Customisation
 
             if (!iconData.purchased && iconData.requiredLevel <= GameManager.UserLevel && iconData.price <= GameManager.UserCoins)
             {
+                GameManager.UserCoins -= iconData.price;
                 iconData.purchased = true;
                 this.InitialiseCategory(category);
             }
@@ -46,13 +60,32 @@ namespace Customisation
                                                   .GetComponent<IconController>();
                 int localIndex = index;
                 bool itemSelected = index == selectedInCategory;
-                controller.Initialise(localIndex, categoryData.icons[index], GameManager.UserLevel,
-                                      itemSelected, categoryEvent, () => this.BuyItem(category, localIndex));
+                IconData iconData = categoryData.icons[localIndex];
+
+                void IconAction()
+                {
+                    if (itemSelected) { return; }
+                    if (iconData.purchased)
+                    {
+                        this.SelectInCategory(category, localIndex);
+                        categoryEvent.Raise(localIndex);
+                        this.InitialiseCategory(category);
+                        return;
+                    }
+                    this.BuyItem(category, localIndex);
+                }
+
+                controller.Initialise(localIndex, iconData, GameManager.UserLevel, itemSelected, IconAction);
             }
         }
 
+        public void InitialiseOutfits() => this.InitialiseCategory(StoreCategory.Outfits);
+        public void InitialiseEyes() => this.InitialiseCategory(StoreCategory.Eyes);
+        public void InitialiseMouths() => this.InitialiseCategory(StoreCategory.Mouths);
+
         private void Start()
         {
+            this.InitialiseCategory(StoreCategory.Outfits);
         }
     }
 }

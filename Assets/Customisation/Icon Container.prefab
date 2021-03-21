@@ -172,7 +172,7 @@ MonoBehaviour:
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 18
+  m_fontSizeMin: 15
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
@@ -345,8 +345,8 @@ MonoBehaviour:
   coinsTMP: {fileID: 2722211668870425271}
   levelImage: {fileID: 2722211670374673235}
   levelTMP: {fileID: 2722211669592900044}
-  defaultColor: {r: 1, g: 1, b: 1, a: 0}
-  selectedColor: {r: 1, g: 0.98165107, b: 0, a: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.98165107, b: 0, a: 1}
 --- !u!1 &2722211669592900042
 GameObject:
   m_ObjectHideFlags: 0

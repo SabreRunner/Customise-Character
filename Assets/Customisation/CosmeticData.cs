@@ -3,7 +3,7 @@ namespace Customisation
     using System;
     using UnityEngine;
 
-    public enum StoreCategory { Eyes, Mouths, Outfits }
+    [Serializable] public enum StoreCategory { Eyes, Mouths, Outfits }
 
     [Serializable]
     public class IconData
