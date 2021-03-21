@@ -52,12 +52,13 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Customisation\CosmeticData.cs" />
      <Compile Include="Assets\Customisation\IconController.cs" />
      <Compile Include="Assets\Customisation\ImageSelector.cs" />
      <Compile Include="Assets\Customisation\UserDataGetter.cs" />
-     <Compile Include="Assets\Customisation\UserData.cs" />
-     <Compile Include="Assets\Customisation\CosmeticData.cs" />
      <Compile Include="Assets\Customisation\IconsManager.cs" />
+     <Compile Include="Assets\Customisation\UserData.cs" />
+     <Compile Include="Assets\Customisation\GameManager.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
