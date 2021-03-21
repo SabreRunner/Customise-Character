@@ -24,6 +24,10 @@ namespace Customisation
     [CreateAssetMenu(menuName = "Customisation/Cosmetic Data", order = 10)]
     public class CosmeticData : ScriptableObject
     {
-        [SerializeField] CategoryData[] categories;
+        public CategoryData[] categories;
+        
+        public CategoryData GetOutfits => this.categories.FindFirst(data => data.category == StoreCategory.Outfits);
+        public CategoryData GetEyes => this.categories.FindFirst(data => data.category == StoreCategory.Eyes);
+        public CategoryData GetMouths => this.categories.FindFirst(data => data.category == StoreCategory.Mouths);
     }
 }
